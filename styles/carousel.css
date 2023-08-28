@@ -1,0 +1,38 @@
+.carousel-section {
+    height: 70vh;
+    width: 100vw;
+    background-color: #0D6EFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+}
+
+.carousel-img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+/* Responsividade de Layout para telas pequenas (mobile) */
+
+@media screen and (max-width: 480px) {
+    .carousel-section {
+        height: 55vh;
+    }
+
+    .div-carousel {
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .carousel-img.w-50 {
+        width: 100% !important; /* Altera a largura para 75% em telas pequenas */
+    }
+}
