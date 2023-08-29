@@ -29,21 +29,26 @@
         <!-- Styles -->
         <link href="/styles/main.css" rel="stylesheet">
         <link href="/styles/carousel.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/services.css">
+        <link rel="stylesheet" href="styles/form.css">
     </head>
     <body>
+        <!-- First View -->
         <main class="main-container">
             <aside class="main-aside-1">
                 <h3 class="main-title">Serviço de Pintura Residencial e Comercial em Grande Vitória - ES</h3>
                 <ul class="networks">
                     <li><a href="https://www.instagram.com/pinturases/"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon size="large" name="mail-outline"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-whatsapp" size="large"></ion-icon></a></li>
+                    <li><a href="mailto:diegobravim@gmail.com"><ion-icon size="large" name="mail-outline"></ion-icon></a></li>
+                    <li><a href="https://wa.me/5527998183637"><ion-icon name="logo-whatsapp" size="large"></ion-icon></a></li>
                 </ul>
             </aside>
             <aside class="main-aside-2">
                 <img src="/img/imgbg.jpg" alt="">
             </aside>
         </main>
+
+        <!-- Carousel Section -->
         <section class="carousel-section">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -56,13 +61,13 @@
                 </div>
                 <div class="carousel-inner div-carousel">
                     <div class="carousel-item active">
-                        <img src="/img/imgbg.jpg" class="d-block w-50 carousel-img" alt="...">
+                        <img src="/img/imgbg.jpg" class="d-block w-60 carousel-img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/imgbg.jpg" class="d-block w-50 carousel-img" alt="...">
+                        <img src="/img/imgbg.jpg" class="d-block w-60 carousel-img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/imgbg.jpg" class="d-block w-50 carousel-img" alt="...">
+                        <img src="/img/imgbg.jpg" class="d-block w-60 carousel-img" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,5 +80,49 @@
                 </button>
             </div>
         </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h3>Prestamos Serviços de Alta Qualidade e Personalizados,<br>para Atender as Demandas de Nossos Clientes da Melhor Forma
+            </h3>
+            <section>
+                <aside>
+                    <ul class="custom-list">
+                        <li>Pintura: Realizamos pintura em diversos tipos de superfícies.</li>
+                        <li>Emassar: Fazemos o emassamento para preparar a superfície para a pintura.</li>
+                        <li>Textura: Aplicamos textura decorativa nas paredes.</li>
+                        <li>Lixar: Realizamos o lixamento para preparar a superfície para a pintura.</li>
+                    </ul>                                     
+                </aside>
+                <aside>
+                    <ul class="custom-list">
+                        <li>Porta, Portão e Janela: Pintura e manutenção de portas, portões e janelas.</li>
+                        <li>Tinta a Óleo e Tinta à Base d'Água: Utilizamos tintas de alta qualidade.</li>
+                        <li>Massa Corrida: Aplicamos massa corrida para nivelar a superfície.</li>
+                        <li>Móveis: Realizamos a pintura de móveis sob medida.</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h3>Realize seu Orçamento sem Compromisso</h3>
+            <form action="mailto:diegobravim@gmail.com" method="post" enctype="text/plain" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="contato">Contato:</label>
+                    <input type="text" class="form-control" id="contato" name="contato">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-btn">Enviar</button>
+        </section>
+        </form>
     </body>
 </html>
