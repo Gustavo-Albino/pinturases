@@ -2,14 +2,13 @@
     height: 70vh;
     width: 100vw;
     background-color: #0D6EFD;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    display: none;
 }
 
 .div-carousel {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
