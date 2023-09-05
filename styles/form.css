@@ -33,9 +33,19 @@
 }
 
 @media screen and (max-width: 480px) {
+    .form-section {
+        background-color: #CFE2FF;
+    }
+
+    .form-section > h3 {
+        margin-top: 3rem;
+    }
+
     .form-section > form {
         width: 100%;
         border-radius: 0;
+        box-shadow: none;
+        padding: .8rem;
     }
 
     .form-btn {

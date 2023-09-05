@@ -1,38 +1,30 @@
 .carousel-section {
-    height: 70vh;
-    width: 100vw;
-    background-color: #0D6EFD;
-    display: none;
-    align-items: center;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    padding: 4vh 2vw;
+    overflow: hidden;
+    height: 80vh;
 }
 
-.div-carousel {
-    display: none;
-    justify-content: space-around;
-    align-items: center;
+.carousel {
+    padding: 2px;
     overflow: hidden;
     width: 50vw;
-}
-
-.carousel-img {
     border-radius: 1rem;
-    width: 100%;
 }
-
-/* Responsividade de Layout para telas pequenas (mobile) */
 
 @media screen and (max-width: 480px) {
     .carousel-section {
-        height: 55vh;
+        padding: 0;
+        height: 40vh;
     }
 
-    .div-carousel {
-        width: 90vw;
-        justify-content: space-between;
-    }
-
-    .carousel-img.w-50 {
-        width: 100% !important; /* Altera a largura para 75% em telas pequenas */
+    .carousel {
+        padding: 0;
+        width: 90%;
+        border-radius: 0.4rem;
     }
 }

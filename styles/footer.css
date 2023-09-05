@@ -1,0 +1,47 @@
+footer {
+    height: 15vh;
+    width: 100vw;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+footer > div > p {
+    color: #fff;
+}
+
+footer > div > ul {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        overflow: hidden;
+    }
+    
+    footer > div {
+        flex-direction: column-reverse;
+    }
+    
+    footer > div > ul {
+        margin-top: 1.5rem;
+        width: 80vw;
+    }
+
+    footer > div > p {
+        font-size: 0.9rem;
+    }
+}
